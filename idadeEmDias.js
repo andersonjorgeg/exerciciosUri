@@ -2,13 +2,24 @@ var input = require("fs").readFileSync("stdin", "utf8");
 
 let valor =  parseInt(input)
 
-const idade = [365, 30]
+function calculoAno(valor) {
+    const ano = parseInt(valor / 365)
+    return ano
+}
 
-const ano = parseInt(valor / idade[0])
-console.log(`${ano} ano(s)`)
-valor %= idade[0]
-const mes = parseInt(valor / idade[1])
-console.log(`${mes} mes(es)`)
-const dia = parseInt(valor % idade[1])
-console.log(`${dia} dia(s)`)
+function calculoMes(valor) {
+    let resto = valor % 365
+    const mes = parseInt(resto / 30)
+    return mes
+}
 
+function calculoDia(valor) {
+    let dias = valor % 365
+    dias %= 30
+    return dias
+
+}
+
+console.log(`${calculoAno(valor)} ano(s)`)
+console.log(`${calculoMes(valor)} mes(es)`)
+console.log(`${calculoDia(valor)} dia(s)`) 
