@@ -1,1 +1,1 @@
-console.log(Math.pow(3.0, 2) - 4 * 10.0 * 5.0)
+const mediaFinal = (mediaPonderada + recuperacao) / 2
