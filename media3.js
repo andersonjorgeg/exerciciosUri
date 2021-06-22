@@ -3,10 +3,10 @@ var linhas = input.split('\n');
 
 let entrada = input.split(' ')
 
-let nota1 = parseFloat(entrada.shift())
-let nota2 = parseFloat(entrada.shift())
-let nota3 = parseFloat(entrada.shift())
-let nota4 = parseFloat(entrada.shift())
+let nota1 = parseFloat(entrada[0])
+let nota2 = parseFloat(entrada[1])
+let nota3 = parseFloat(entrada[2])
+let nota4 = parseFloat(entrada[3])
 
 let peso1 = 2.0
 let peso2 = 3.0
@@ -27,9 +27,9 @@ else if (mediaPonderada() < 4.9) {
 } 
 else{
     console.log('Aluno em exame.')
-    let recuperacao = linhas.pop()
-    console.log(`Nota do exame: ${parseFloat(recuperacao)}`)
-    let mediaFinal = (mediaPonderada() + recuperacao) / 2
+    let recuperacao = linhas[1]
+    console.log(`Nota do exame: ${recuperacao}`)
+    let mediaFinal = (mediaPonderada() + parseFloat(recuperacao)) / 2
     if (mediaFinal >= 5.0) {
         console.log('Aluno aprovado.')
         console.log(`Media final: ${mediaFinal.toFixed(1)}`)
