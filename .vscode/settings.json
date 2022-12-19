@@ -1,25 +1,26 @@
 {
     "cSpell.words": [
-        "Combustivel",
-        "Funcionario",
-        "Matheus",
-        "Medio",
-        "Retangulo",
-        "Salario",
-        "Trapezio",
-        "Triangulo",
-        "Unitario",
         "aceitos",
         "codigo",
+        "Combustivel",
         "comissao",
         "diferenca",
         "divisao",
+        "Funcionario",
+        "Matheus",
+        "Medio",
         "ordernado",
         "ordernar",
+        "Perimetro",
         "recuperacao",
         "relogio",
+        "Retangulo",
+        "Salario",
         "tofixe",
         "tofixed",
-        "totalpeca"
+        "totalpeca",
+        "Trapezio",
+        "Triangulo",
+        "Unitario"
     ]
 }

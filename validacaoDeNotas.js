@@ -7,31 +7,31 @@ let nota2 = parseFloat(entrada.shift());
 let nota3 = parseFloat(entrada.shift());
 let nota4 = parseFloat(entrada.shift());
 
-let notas = []
+let notas = [];
 
 if(nota1 > 10 || nota1 < 0) {
-  console.log("nota invalida")
+  console.log("nota invalida");
 } else {
-  notas.push(nota1)
+  notas.push(nota1);
 }
 
 if(nota2 > 10 || nota2 < 0) {
-  console.log("nota invalida")
+  console.log("nota invalida");
 } else {
-  notas.push(nota2)
+  notas.push(nota2);
 }
 
 if(nota3 > 10 || nota3 < 0) {
-  console.log("nota invalida")
+  console.log("nota invalida");
 } else {
-  notas.push(nota3)
+  notas.push(nota3);
 }
 
 if(nota4 > 10 || nota4 < 0) {
-  console.log("nota invalida")
+  console.log("nota invalida");
 } else {
-  notas.push(nota4)
+  notas.push(nota4);
 }
 
 let media = (notas[0] + notas[1]) / 2;
-console.log("media = ", media.toFixed(2))
+console.log("media = ", media.toFixed(2));
